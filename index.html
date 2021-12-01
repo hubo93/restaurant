@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='images/icon.png' rel='icon' type='image/x-icon'/>
+	<title>Mr.Penguin's Restaurant</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<!--------------------nav bar----------------------->	
+<section class="home">
+	<header class="logo">
+		<img src="images/logo.png" alt="Logo for Restaurant">
+	</header>
+		<nav>	
+			<div class="links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<a href="index.html">HOME</a>
+					<a href="#">MENU</a>
+					<a href="#">ORDER ONLINE</a>
+					<a href="comment.html">COMMENT</a>
+					<a href="contact.html">CONTACT US</a>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>	
+		<div class="main">
+			<h1>Let's fish</h1>
+			<p>Mr.Penguin loves fresh fish. In Mr.Penguin's restaurant, all seafood is fresh. You can fish yourself and then our professional chefs make your favorite dishes from the fish you catch. In addition to fish, we have a wide variety of seafood for you to choose from.</p>
+			<br></br>
+			<a href="#" class="button">Click Here to Make Reservation</a>
+		</div>
+</section>
+
+<!-------------------Footer---------------------->
+
+<section class="footer">
+	<P>Main St, Antartica Mr.Penguin, Co.IceBird - Copyright 2021</P>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+	</div>
+</section>
+
+
+<!--------------------JavaScript for Menu------------------------>
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+
+</body>
+</html>

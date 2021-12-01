@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='images/icon.png' rel='icon' type='image/x-icon'/>
+	<title>Mr.Penguin's Restaurant</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<!--------------------nav bar----------------------->	
+<section class="navbar">
+	<header class="logo">
+		<img src="images/logo.png" alt="Logo for Restaurant">
+	</header>
+		<nav>	
+			<div class="links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<a href="index.html">HOME</a>
+					<a href="#">MENU</a>
+					<a href="#">ORDER ONLINE</a>
+					<a href="comment.html">COMMENT</a>
+					<a href="contact.html">CONTACT US</a>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+</section>
+
+<!--------------------comment----------------------->	
+<section class="comment">
+	<div class="row">
+		<div class="com-col">
+			<h1>What Our customer Says</h1>
+			<div class="user">
+				<img src="images/adeli.jpg"> 
+				<h3>Adelie 
+				<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i>
+				</h3>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis consequat diam, et vestibulum elit feugiat ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  </p>	
+			<div class="user">
+				<img src="images/seal.jpg"> 
+				<h3>Mr.Seal 
+				<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+				</h3>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis consequat diam, et vestibulum elit feugiat ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras tincidunt maximus porttitor. Aliquam accumsan rhoncus tellus, ut vehicula. </p>	
+			<div class="user">
+				<img src="images/penguin.jpg"> 
+				<h3>Emperor 
+				<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i>
+				</h3>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis consequat diam, et vestibulum elit feugiat ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras tincidunt maximus porttitor. Aliquam accumsan rhoncus tellus, ut vehicula velit maximus eu. </p>	
+			<div class="user">
+				<img src="images/shark.JPG"> 
+				<h3>Adelie 
+				<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i>
+				</h3>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis consequat diam, et vestibulum elit feugiat ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam accumsan rhoncus tellus, ut vehicula velit maximus eu.  </p>	
+
+		</div>
+
+		<div class="blog-col">
+			<div class="blog">
+				<h1>Comment Categories</h1>
+				<div>
+					<span>Taste Good</span>
+					<span>92</span>
+				</div>
+				<div>
+					<span>Nice Service</span>
+					<span>54</span>
+				</div>
+				<div>
+					<span>Fast delivery</span>
+					<span>28</span>
+				</div>
+				<div>
+					<span>Nice Environment</span>
+					<span>36</span>
+				</div>
+				<div>
+					<span>I Recommend</span>
+					<span>67</span>
+				</div>
+			</div>
+			<div class="com-box">
+				<h1>Leave your Comments</h1>
+				<form class="com-form">
+					<input type="text" placeholder="Enter Your Name">
+					<textarea rows="5" placeholder="Your comment"></textarea>
+					<button type="submit" class="button">POST COMMENT</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-------------------Footer---------------------->
+
+<section class="footer">
+	<P>Main St, Antartica Mr.Penguin, Co.IceBird - Copyright 2021</P>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+	</div>
+</section>
+
+
+<!--------------------JavaScript for Menu------------------------>
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+
+</body>
+</html>

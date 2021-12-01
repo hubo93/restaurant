@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='images/icon.png' rel='icon' type='image/x-icon'/>
+	<title>Mr.Penguin's Restaurant</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<!--------------------nav bar----------------------->
+<section class="navbar">
+	<header class="logo">
+		<img src="images/logo.png" alt="Logo for Restaurant">
+	</header>
+		<nav>
+			<div class="links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<a href="index.html">HOME</a>
+					<a href="#">MENU</a>
+					<a href="#">ORDER ONLINE</a>
+					<a href="comment.html">COMMENT</a>
+					<a href="contact.html">CONTACT US</a>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+</section>
+
+<!--------------------comment----------------------->
+<section class="comment">
+	<h1>menu</h1>
+	<table cellspacing="30">
+		<thead>
+			<th>Dish name</th>
+			<th>Price</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>fried fish</td>
+				<td>48</td>
+			</tr>
+			<tr>
+				<td>fish soup</td>
+				<td>28</td>
+			</tr>
+		</tbody>
+	</table>
+
+</section>
+
+
+<!-------------------Footer---------------------->
+
+<section class="footer">
+	<P>Main St, Antartica Mr.Penguin, Co.IceBird - Copyright 2021</P>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+	</div>
+</section>
+
+
+<!--------------------JavaScript for Menu------------------------>
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+
+</body>
+</html>

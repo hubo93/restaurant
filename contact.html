@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='images/icon.png' rel='icon' type='image/x-icon'/>
+	<title>Mr.Penguin's Restaurant</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<section class="navbar">
+	<header class="logo">
+		<img src="images/logo.png" alt="Logo for Restaurant">
+	</header>
+
+	<nav>	
+		<div class="links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<a href="index.html">HOME</a>
+				<a href="#">MENU</a>
+				<a href="#">ORDER ONLINE</a>
+				<a href="comment.html">COMMENT</a>
+				<a href="contact.html">CONTACT US</a>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+</section>
+
+<div class="map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1838.7578122898005!2d115.70068502875677!3d-32.30387998057466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a3282dcf92b2e0d%3A0x3a0df2cb2b07f43d!2sPenguin%20Island%20Sand%20Bar!5e0!3m2!1sen!2spl!4v1623265307838!5m2!1sen!2spl" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<section class="contact-us">
+	<div class="row">
+		<div class="contact-col">
+			<div>
+				<i class="fa fa-home"></i>
+				<span>
+					<h4>Pingu Road, Ice Building</h4>
+					<p> Antartica, Mr.Penguin, Co.IceBird</p>
+				</span>
+			</div>
+			<div>
+				<i class="fa fa-phone"></i>
+				<span>
+					<h4>+48 00456789123</h4>
+					<p> Monday to Saturday, 10AM to 6PM</p>
+				</span>
+			</div>
+			<div>
+				<i class="fa fa-envelope-o"></i>
+				<span>
+					<h4>mrpenguin886@gmail.com</h4>
+					<p><a href="mailto:mrpenguin886@gmail.com" target="_blank">Email Us</a> 24/7</p>
+				</span>
+			</div>
+		</div>
+		<div class="email-col">
+			<form action="mailto:mrpenguin886@gmail.com" method="POST" enctype="text/plain">
+				<input type="email" name="email" placeholder="Your Email Address" required>
+				<input type="text" name="subject" placeholder="Subject" required>
+				<textarea rows="10" name="message" placeholder="Message" required></textarea>
+				<button type="submit" class="button">Send</button>
+			</form>
+		</div>
+	</div>
+</section>
+
+<!--------------------Footer------------------------>
+
+<section class="footer">
+	<P>Main St, Antartica Mr.Penguin, Co.IceBird - Copyright 2021</P>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+	</div>
+</section>
+
+
+<!--------------------JavaScript for Menu------------------------>
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+
+</body>
+</html>
